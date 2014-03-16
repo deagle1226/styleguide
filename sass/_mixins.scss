@@ -47,8 +47,10 @@
     text-shadow: 0px -1px 0px $textShadowColor;
     font-family: $font;
     -webkit-text-stroke: 0px;
+    text-decoration: none;
+    font-weight: bold;
 
-    &:hover {
+    &:not(.disabled):hover {
         cursor: pointer;
         border: $borderWidthHover $borderStyleHover $borderColorHover;
         border-bottom-width: $borderBottomWidthMultiHover * $borderWidthHover;
@@ -71,5 +73,13 @@
     &.block {
         display: block;
         text-align: center;
+    }
+
+    &.disabled {
+        opacity: 0.5;
+
+        &:hover {
+            cursor: not-allowed;
+        }
     }
 }

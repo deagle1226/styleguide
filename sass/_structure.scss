@@ -36,11 +36,12 @@ section {
 }
 
 .wrapper {
-    @include border-radius(7px);
-    border: 1px solid rgba(0,0,0,0.2);
+    //@include border-radius(7px);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom-width: 3px;
     padding: 0 $padding $padding $padding;
     margin-bottom: $padding;
-    background: #f9f9f9;
+    //background: #f9f9f9;
 }
 
 #popup {

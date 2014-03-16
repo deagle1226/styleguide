@@ -15,14 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
     position: fixed;
-    top: 123px;
+    z-index: 99;
+    top: $padding;
     right: 0;
 //    background: #fff;
 //    border: 1px solid #ddd;
 //    border-bottom-width: 3px;
     width: 175px;
     font-family: $font;
-    padding: 5px 0;
+    font-size: 13px;
+    text-transform: uppercase;
 
     ul {
         list-style: none;
@@ -38,7 +40,7 @@ nav {
             border-left: 3px solid transparent;
 
             &:hover, &.active {
-                //background: $background-blue-light;
+                background: $background-blue-light;
                 color: $border-blue-hover;
                 border-color: $border-blue;
                 //font-weight: bold;
@@ -46,8 +48,10 @@ nav {
         }
 
         ul {
+            //text-transform: none;
+
             a {
-                font-size: 80%;
+                font-size: 11px;
                 padding: 3px 20px;
                 border-width: 2px;
                 opacity: 0.75;

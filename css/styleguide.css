@@ -4,12 +4,12 @@
 .context { margin-top: 20px; }
 
 /* line 16, ../sass/styleguide.scss */
-nav { position: fixed; top: 123px; right: 0; width: 175px; font-family: "Roboto", sans-serif; padding: 5px 0; }
-/* line 27, ../sass/styleguide.scss */
+nav { position: fixed; z-index: 99; top: 20px; right: 0; width: 175px; font-family: "Roboto", sans-serif; font-size: 13px; text-transform: uppercase; }
+/* line 29, ../sass/styleguide.scss */
 nav ul { list-style: none; margin: 0; padding: 0; }
-/* line 32, ../sass/styleguide.scss */
+/* line 34, ../sass/styleguide.scss */
 nav ul a { display: block; color: #357ebd; text-decoration: none; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; padding: 5px 10px; border-left: 3px solid transparent; }
-/* line 40, ../sass/styleguide.scss */
-nav ul a:hover, nav ul a.active { color: #285e8e; border-color: #357ebd; }
-/* line 49, ../sass/styleguide.scss */
-nav ul ul a { font-size: 80%; padding: 3px 20px; border-width: 2px; opacity: 0.75; }
+/* line 42, ../sass/styleguide.scss */
+nav ul a:hover, nav ul a.active { background: #d9edf7; color: #285e8e; border-color: #357ebd; }
+/* line 53, ../sass/styleguide.scss */
+nav ul ul a { font-size: 11px; padding: 3px 20px; border-width: 2px; opacity: 0.75; }
