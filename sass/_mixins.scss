@@ -1,0 +1,74 @@
+/* _mixins.scss */
+
+@mixin border-radius($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($target: all, $time: 150ms, $behavior: ease-in-out) {
+    -webkit-transition: $target $time $behavior;
+    -moz-transition: $target $time $behavior;
+    -ms-transition: $target $time $behavior;
+    -o-transition: $target $time $behavior;
+    transition: $target $time $behavior;
+}
+
+@mixin button(
+    $textColor: $darkGray,
+    $bgColor: #fff,
+    $borderWidth: 1px,
+    $borderStyle: solid,
+    $borderColor: #ccc,
+    $textColorHover: $textColor,
+    $bgColorHover: darken($bgColor, 10%),
+    $borderWidthHover: $borderWidth,
+    $borderStyleHover: $borderStyle,
+    $borderColorHover: darken($borderColor, 10%),
+    $fontSize: 12px,
+    $paddingVert: 5px,
+    $paddingHoriz: 7px,
+    $borderBottomWidthMulti: 2,
+    $borderBottomWidthMultiHover: 2,
+    $textShadowColor: $bgColor,
+    $textShadowColorHover: $bgColorHover
+) {
+    border: $borderWidth $borderStyle $borderColor;
+    border-bottom-width: $borderBottomWidthMulti * $borderWidth;
+    border-bottom-color: rgba($borderColor, 0.75);
+    background: $bgColor;
+    color: $textColor;
+    @include border-radius();
+    display: inline-block;
+    padding: $paddingVert $paddingHoriz;
+    @include transition();
+    font-size: $fontSize;
+    text-shadow: 0px -1px 0px $textShadowColor;
+    font-family: $font;
+    -webkit-text-stroke: 0px;
+
+    &:hover {
+        cursor: pointer;
+        border: $borderWidthHover $borderStyleHover $borderColorHover;
+        border-bottom-width: $borderBottomWidthMultiHover * $borderWidthHover;
+        border-bottom-color: rgba($borderColorHover, 0.75);
+        background: $bgColorHover;
+        color: $textColorHover;
+        text-shadow: 0px -1px 0px $textShadowColorHover;
+    }
+
+
+    &.small {
+        font-size: $fontSize * 0.75;
+        text-transform: uppercase;
+    }
+
+    &.large {
+        font-size: $fontSize * 1.25;
+    }
+
+    &.block {
+        display: block;
+    }
+}

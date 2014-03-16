@@ -1,0 +1,126 @@
+/* _variables.scss */
+/* _mixins.scss */
+/* _typography.scss */
+/* line 3, ../sass/_typography.scss */
+body { font-size: 100%; font-family: "Roboto Slab", sans-serif; color: #555555; background: #f3f3f3; -webkit-text-stroke: 0.3px; }
+
+/* line 11, ../sass/_typography.scss */
+.uppercase { text-transform: uppercase; }
+
+/* line 15, ../sass/_typography.scss */
+.text-red { color: #a94442; }
+
+/* line 18, ../sass/_typography.scss */
+.text-green { color: #3c763d; }
+
+/* line 21, ../sass/_typography.scss */
+.text-blue { color: #31708f; }
+
+/* line 24, ../sass/_typography.scss */
+.text-orange { color: #8a6d3b; }
+
+/* line 28, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-family: "Roboto Slab", sans-serif; -webkit-text-stroke: 0.6px; line-height: 40px; }
+/* line 35, ../sass/_typography.scss */
+h1.sub, h2.sub, h3.sub, h4.sub, h5.sub, h6.sub { opacity: 0.5; font-family: "Roboto", sans-serif; font-weight: 700; }
+/* line 41, ../sass/_typography.scss */
+h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline { display: inline-block; }
+
+/* line 46, ../sass/_typography.scss */
+code { background: #efefef; border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; display: inline-block; padding: 5px 10px; font-family: "Ubuntu Mono", sans-serif; font-size: 80%; }
+/* line 55, ../sass/_typography.scss */
+code.block { display: block; padding: 10px; }
+
+/* line 61, ../sass/_typography.scss */
+.context { display: block; background: #f3f3f3; border-left: 3px solid #555555; padding: 20px; }
+/* line 68, ../sass/_typography.scss */
+.context.red { background: #f2dede; border-color: #d43f3a; color: #a94442; }
+/* line 74, ../sass/_typography.scss */
+.context.green { background: #dff0d8; border-color: #4cae4c; color: #3c763d; }
+/* line 80, ../sass/_typography.scss */
+.context.blue { background: #d9edf7; border-color: #357ebd; color: #31708f; }
+/* line 86, ../sass/_typography.scss */
+.context.orange { background: #fcf8e3; border-color: #eea236; color: #8a6d3b; }
+
+/* line 1, ../sass/_structure.scss */
+* { position: relative; }
+
+/* line 5, ../sass/_structure.scss */
+.right { position: absolute; right: 20px; }
+
+/* line 10, ../sass/_structure.scss */
+.left { position: absolute; left: 20px; }
+
+/* line 15, ../sass/_structure.scss */
+.popup { position: fixed; top: 20px; left: 20px; right: 20px; text-align: center; background: #f3f3f3; border: 1px solid #555555; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; padding: 10px 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05); }
+/* line 27, ../sass/_structure.scss */
+.popup.red { background-color: #f2dede; color: #a94442; border-color: #d43f3a; }
+/* line 32, ../sass/_structure.scss */
+.popup.green { background-color: #dff0d8; color: #3c763d; border-color: #4cae4c; }
+/* line 37, ../sass/_structure.scss */
+.popup.blue { background-color: #d9edf7; color: #31708f; border-color: #357ebd; }
+/* line 42, ../sass/_structure.scss */
+.popup.orange { background-color: #fcf8e3; color: #8a6d3b; border-color: #eea236; }
+
+/* _button.scss */
+/* line 3, ../sass/_button.scss */
+.button { border: 1px solid #cccccc; border-bottom-width: 2px; border-bottom-color: rgba(204, 204, 204, 0.75); background: white; color: #555555; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px white; font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
+/* line 51, ../sass/_mixins.scss */
+.button:hover { cursor: pointer; border: 1px solid #b3b3b3; border-bottom-width: 2px; border-bottom-color: rgba(179, 179, 179, 0.75); background: #e6e6e6; color: #555555; text-shadow: 0px -1px 0px #e6e6e6; }
+/* line 62, ../sass/_mixins.scss */
+.button.small { font-size: 9px; text-transform: uppercase; }
+/* line 67, ../sass/_mixins.scss */
+.button.large { font-size: 15px; }
+/* line 71, ../sass/_mixins.scss */
+.button.block { display: block; }
+
+/* line 7, ../sass/_button.scss */
+.button-green { border: 1px solid #4cae4c; border-bottom-width: 2px; border-bottom-color: rgba(76, 174, 76, 0.75); background: #5cb85c; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
+/* line 51, ../sass/_mixins.scss */
+.button-green:hover { cursor: pointer; border: 1px solid #398439; border-bottom-width: 2px; border-bottom-color: rgba(57, 132, 57, 0.75); background: #47a447; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+/* line 62, ../sass/_mixins.scss */
+.button-green.small { font-size: 9px; text-transform: uppercase; }
+/* line 67, ../sass/_mixins.scss */
+.button-green.large { font-size: 15px; }
+/* line 71, ../sass/_mixins.scss */
+.button-green.block { display: block; }
+
+/* line 19, ../sass/_button.scss */
+.button-blue { border: 1px solid #357ebd; border-bottom-width: 2px; border-bottom-color: rgba(53, 126, 189, 0.75); background: #428bca; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
+/* line 51, ../sass/_mixins.scss */
+.button-blue:hover { cursor: pointer; border: 1px solid #285e8e; border-bottom-width: 2px; border-bottom-color: rgba(40, 94, 142, 0.75); background: #3276b1; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+/* line 62, ../sass/_mixins.scss */
+.button-blue.small { font-size: 9px; text-transform: uppercase; }
+/* line 67, ../sass/_mixins.scss */
+.button-blue.large { font-size: 15px; }
+/* line 71, ../sass/_mixins.scss */
+.button-blue.block { display: block; }
+
+/* line 31, ../sass/_button.scss */
+.button-red { border: 1px solid #d43f3a; border-bottom-width: 2px; border-bottom-color: rgba(212, 63, 58, 0.75); background: #d9534f; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
+/* line 51, ../sass/_mixins.scss */
+.button-red:hover { cursor: pointer; border: 1px solid #ac2925; border-bottom-width: 2px; border-bottom-color: rgba(172, 41, 37, 0.75); background: #d2322d; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+/* line 62, ../sass/_mixins.scss */
+.button-red.small { font-size: 9px; text-transform: uppercase; }
+/* line 67, ../sass/_mixins.scss */
+.button-red.large { font-size: 15px; }
+/* line 71, ../sass/_mixins.scss */
+.button-red.block { display: block; }
+
+/* line 43, ../sass/_button.scss */
+.button-orange { border: 1px solid #eea236; border-bottom-width: 2px; border-bottom-color: rgba(238, 162, 54, 0.75); background: #f0ad4e; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
+/* line 51, ../sass/_mixins.scss */
+.button-orange:hover { cursor: pointer; border: 1px solid #d58512; border-bottom-width: 2px; border-bottom-color: rgba(213, 133, 18, 0.75); background: #ed9c28; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+/* line 62, ../sass/_mixins.scss */
+.button-orange.small { font-size: 9px; text-transform: uppercase; }
+/* line 67, ../sass/_mixins.scss */
+.button-orange.large { font-size: 15px; }
+/* line 71, ../sass/_mixins.scss */
+.button-orange.block { display: block; }
+
+/* line 8, ../sass/main.scss */
+.cssTest { width: 800px; margin: 20px auto; display: block; background: #fff; border: 1px solid #ddd; border-bottom-width: 3px; padding: 20px; }
+/* line 18, ../sass/main.scss */
+.cssTest * { margin-bottom: 20px; }
+/* line 22, ../sass/main.scss */
+.cssTest h1, .cssTest h2, .cssTest h3, .cssTest h4, .cssTest h5, .cssTest h6 { margin-bottom: 0px; }

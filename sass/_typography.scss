@@ -1,0 +1,91 @@
+/* _typography.scss */
+
+body {
+    font-size: 100%;
+    font-family: $font-slab;
+    color: $darkGray;
+    background: #f3f3f3;
+    -webkit-text-stroke: 0.3px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-red {
+    color: $text-red;
+}
+.text-green {
+    color: $text-green;
+}
+.text-blue {
+    color: $text-blue;
+}
+.text-orange {
+    color: $text-orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: $font-slab;
+    -webkit-text-stroke: 0.6px;
+    line-height: 40px;
+
+    &.sub {
+        opacity: 0.5;
+        font-family: $font;
+        font-weight: 700;
+    }
+
+    &.inline {
+        display: inline-block;
+    }
+}
+
+code {
+    background: #efefef;
+    border: 1px solid #ddd;
+    @include border-radius(3px);
+    display: inline-block;
+    padding: $padding/4 $padding/2;
+    font-family: $font-mono;
+    font-size: 80%;
+
+    &.block {
+        display: block;
+        padding: $padding/2;
+    }
+}
+
+.context {
+    display: block;
+    background: #f3f3f3;
+    border-left: 3px solid $darkGray;
+    padding: $padding;
+    //font-weight: 700;
+
+    &.red {
+        background: $background-red-light;
+        border-color: $border-red;
+        color: $text-red;
+    }
+
+    &.green {
+        background: $background-green-light;
+        border-color: $border-green;
+        color: $text-green;
+    }
+
+    &.blue {
+        background: $background-blue-light;
+        border-color: $border-blue;
+        color: $text-blue;
+    }
+
+    &.orange {
+        background: $background-orange-light;
+        border-color: $border-orange;
+        color: $text-orange;
+    }
+}

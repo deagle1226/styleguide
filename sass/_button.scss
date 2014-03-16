@@ -1,0 +1,53 @@
+/* _button.scss */
+
+.button {
+    @include button();
+}
+
+.button-green {
+    @include button(
+        $bgColor: $background-green,
+        $borderColor: $border-green,
+        $bgColorHover: $background-green-hover,
+        $borderColorHover: $border-green-hover,
+        $textColor: #fff,
+        $textShadowColor: $text-shadow,
+        $textShadowColorHover: $text-shadow
+    );
+}
+
+.button-blue {
+   @include button(
+        $bgColor: $background-blue,
+        $borderColor: $border-blue,
+        $bgColorHover: $background-blue-hover,
+        $borderColorHover: $border-blue-hover,
+        $textColor: #fff,
+        $textShadowColor: $text-shadow,
+        $textShadowColorHover: $text-shadow
+    );
+}
+
+.button-red {
+    @include button(
+        $bgColor: $background-red,
+        $borderColor: $border-red,
+        $bgColorHover: $background-red-hover,
+        $borderColorHover: $border-red-hover,
+        $textColor: #fff,
+        $textShadowColor: $text-shadow,
+        $textShadowColorHover: $text-shadow
+    );
+}
+
+.button-orange {
+    @include button(
+        $bgColor: $background-orange,
+        $borderColor: $border-orange,
+        $bgColorHover: $background-orange-hover,
+        $borderColorHover: $border-orange-hover,
+        $textColor: #fff,
+        $textShadowColor: $text-shadow,
+        $textShadowColorHover: $text-shadow
+    );
+}

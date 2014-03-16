@@ -1,0 +1,25 @@
+// MAIN
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'structure';
+@import 'button';
+
+.cssTest {
+    width: 800px;
+    margin: 20px auto;
+    display:block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom-width: 3px;
+    padding: $padding;
+    //padding-bottom: 0;
+
+    * {
+        margin-bottom: $padding;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0px;
+    }
+}
