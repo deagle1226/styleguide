@@ -57,13 +57,15 @@ h1 {
 }
 
 p {
+    line-height: 1.5em;
+
     &.lead {
         font-size: 125%;
         font-weight: bold;
     }
 }
 
-code {
+code, pre {
     background: #efefef;
     border: 1px solid #ddd;
     @include border-radius(3px);
@@ -71,6 +73,7 @@ code {
     padding: $padding/4 $padding/2;
     font-family: $font-mono;
     font-size: 80%;
+    -webkit-text-stroke: 0;
 
     &.block {
         display: block;
@@ -99,7 +102,7 @@ dl {
     margin: 0;
     dt {
         font-weight: bold;
-        line-height: 1.5em;
+        line-height: 1.8em;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

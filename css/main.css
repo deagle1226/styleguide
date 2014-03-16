@@ -1,344 +1,332 @@
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
-/* line 9, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 9, ../sass/_normalize.scss */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /** Remove default margin. */
-/* line 19, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 19, ../sass/_normalize.scss */
 body { margin: 0; }
 
 /* HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
-/* line 41, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 41, ../sass/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 /** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
-/* line 53, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 53, ../sass/_normalize.scss */
 audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
 
 /** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
-/* line 63, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 63, ../sass/_normalize.scss */
 audio:not([controls]) { display: none; height: 0; }
 
 /** Address `[hidden]` styling not present in IE 8/9. Hide the `template` element in IE, Safari, and Firefox < 22. */
-/* line 74, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 74, ../sass/_normalize.scss */
 [hidden], template { display: none; }
 
 /* Links ========================================================================== */
 /** Remove the gray background color from active links in IE 10. */
-/* line 85, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 85, ../sass/_normalize.scss */
 a { background: transparent; }
 
 /** Improve readability when focused and also mouse hovered in all browsers. */
-/* line 94, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 94, ../sass/_normalize.scss */
 a:active, a:hover { outline: 0; }
 
 /* Text-level semantics ========================================================================== */
 /** Address styling not present in IE 8/9, Safari 5, and Chrome. */
-/* line 105, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 105, ../sass/_normalize.scss */
 abbr[title] { border-bottom: 1px dotted; }
 
 /** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-/* line 114, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 114, ../sass/_normalize.scss */
 b, strong { font-weight: bold; }
 
 /** Address styling not present in Safari 5 and Chrome. */
-/* line 122, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 122, ../sass/_normalize.scss */
 dfn { font-style: italic; }
 
 /** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
-/* line 131, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 131, ../sass/_normalize.scss */
 h1 { font-size: 2em; margin: 0.67em 0; }
 
 /** Address styling not present in IE 8/9. */
-/* line 140, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 140, ../sass/_normalize.scss */
 mark { background: #ff0; color: #000; }
 
 /** Address inconsistent and variable font size in all browsers. */
-/* line 149, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 149, ../sass/_normalize.scss */
 small { font-size: 80%; }
 
 /** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-/* line 158, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 158, ../sass/_normalize.scss */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 
-/* line 165, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 165, ../sass/_normalize.scss */
 sup { top: -0.5em; }
 
-/* line 169, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 169, ../sass/_normalize.scss */
 sub { bottom: -0.25em; }
 
 /* Embedded content ========================================================================== */
 /** Remove border when inside `a` element in IE 8/9. */
-/* line 180, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 180, ../sass/_normalize.scss */
 img { border: 0; }
 
 /** Correct overflow displayed oddly in IE 9. */
-/* line 188, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 188, ../sass/_normalize.scss */
 svg:not(:root) { overflow: hidden; }
 
 /* Grouping content ========================================================================== */
 /** Address margin not present in IE 8/9 and Safari 5. */
-/* line 199, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 199, ../sass/_normalize.scss */
 figure { margin: 1em 40px; }
 
 /** Address differences between Firefox and other browsers. */
-/* line 207, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 207, ../sass/_normalize.scss */
 hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
 
 /** Contain overflow in all browsers. */
-/* line 217, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 217, ../sass/_normalize.scss */
 pre { overflow: auto; }
 
 /** Address odd `em`-unit font size rendering in all browsers. */
-/* line 228, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 228, ../sass/_normalize.scss */
 code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
 
 /* Forms ========================================================================== */
 /** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
 /** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
-/* line 252, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 252, ../sass/_normalize.scss */
 button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
 
 /** Address `overflow` set to `hidden` in IE 8/9/10. */
-/* line 262, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 262, ../sass/_normalize.scss */
 button { overflow: visible; }
 
 /** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8+, and Opera Correct `select` style inheritance in Firefox. */
-/* line 274, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 274, ../sass/_normalize.scss */
 button, select { text-transform: none; }
 
 /** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
-/* line 289, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 289, ../sass/_normalize.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
 
 /** Re-set default cursor for disabled elements. */
-/* line 299, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 299, ../sass/_normalize.scss */
 button[disabled], html input[disabled] { cursor: default; }
 
 /** Remove inner padding and border in Firefox 4+. */
-/* line 308, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 308, ../sass/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 /** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
-/* line 318, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 318, ../sass/_normalize.scss */
 input { line-height: normal; }
 
 /** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
-/* line 331, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 331, ../sass/_normalize.scss */
 input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
 
 /** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
-/* line 343, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 343, ../sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
 
 /** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
-/* line 353, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 353, ../sass/_normalize.scss */
 input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
 
 /** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
-/* line 367, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 367, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 /** Define consistent border, margin, and padding. */
-/* line 375, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 375, ../sass/_normalize.scss */
 fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 
 /** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
-/* line 386, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 386, ../sass/_normalize.scss */
 legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
 
 /** Remove default vertical scrollbar in IE 8/9. */
-/* line 395, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 395, ../sass/_normalize.scss */
 textarea { overflow: auto; }
 
 /** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
-/* line 404, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 404, ../sass/_normalize.scss */
 optgroup { font-weight: bold; }
 
 /* Tables ========================================================================== */
 /** Remove most spacing between table cells. */
-/* line 415, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 415, ../sass/_normalize.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 421, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_normalize.scss */
+/* line 421, ../sass/_normalize.scss */
 td, th { padding: 0; }
 
 /* _variables.scss */
 /* _mixins.scss */
 /* _typography.scss */
-/* line 3, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 3, ../sass/_typography.scss */
 body { font-size: 100%; font-family: "Roboto Slab", sans-serif; color: #555555; background: #f3f3f3; -webkit-text-stroke: 0.3px; }
 
-/* line 11, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 .uppercase { text-transform: uppercase; }
 
-/* line 15, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 15, ../sass/_typography.scss */
 .text-red { color: #a94442; }
 
-/* line 18, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 18, ../sass/_typography.scss */
 .text-green { color: #3c763d; }
 
-/* line 21, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 .text-blue { color: #31708f; }
 
-/* line 24, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 24, ../sass/_typography.scss */
 .text-orange { color: #8a6d3b; }
 
-/* line 28, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-family: "Roboto Slab", sans-serif; -webkit-text-stroke: 0.6px; line-height: 40px; }
-/* line 35, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 h1.sub, h2.sub, h3.sub, h4.sub, h5.sub, h6.sub { opacity: 0.5; font-family: "Roboto", sans-serif; font-weight: 700; }
-/* line 41, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 41, ../sass/_typography.scss */
 h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline { display: inline-block; }
-/* line 45, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 45, ../sass/_typography.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { opacity: 0.5; font-size: 75%; }
-/* line 50, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 50, ../sass/_typography.scss */
 h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-/* line 55, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 h1 { font-size: 2em; }
 
-/* line 60, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 59, ../sass/_typography.scss */
+p { line-height: 1.5em; }
+/* line 62, ../sass/_typography.scss */
 p.lead { font-size: 125%; font-weight: bold; }
 
-/* line 66, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
-code { background: #efefef; border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; display: inline-block; padding: 5px 10px; font-family: "Ubuntu Mono", sans-serif; font-size: 80%; }
-/* line 75, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
-code.block { display: block; padding: 10px; }
+/* line 68, ../sass/_typography.scss */
+code, pre { background: #efefef; border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; display: inline-block; padding: 5px 10px; font-family: "Ubuntu Mono", sans-serif; font-size: 80%; -webkit-text-stroke: 0; }
+/* line 78, ../sass/_typography.scss */
+code.block, pre.block { display: block; padding: 10px; }
 
-/* line 81, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 blockquote { display: block; background: rgba(0, 0, 0, 0.05); border-left: 3px solid #555555; padding: 20px; }
-/* line 87, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 90, ../sass/_typography.scss */
 blockquote footer { opacity: 0.5; padding-top: 20px; font-style: italic; }
-/* line 92, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 95, ../sass/_typography.scss */
 blockquote footer:before { content: "- "; }
 
-/* line 98, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 dl { margin: 0; }
-/* line 100, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
-dl dt { font-weight: bold; line-height: 1.5em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-/* line 108, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
+dl dt { font-weight: bold; line-height: 1.8em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* line 111, ../sass/_typography.scss */
 dl dd { margin: 0; }
-/* line 113, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 116, ../sass/_typography.scss */
 dl.dl-horizontal dt { float: left; width: 160px; }
-/* line 118, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 dl.dl-horizontal dd { line-height: 1.5em; margin-left: 180px; }
 
-/* line 125, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 128, ../sass/_typography.scss */
 .context { display: block; background: #f3f3f3; border-left: 3px solid #555555; padding: 20px; }
-/* line 132, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 135, ../sass/_typography.scss */
 .context.red { background: #f2dede; border-color: #d43f3a; color: #a94442; }
-/* line 138, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 141, ../sass/_typography.scss */
 .context.green { background: #dff0d8; border-color: #4cae4c; color: #3c763d; }
-/* line 144, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 147, ../sass/_typography.scss */
 .context.blue { background: #d9edf7; border-color: #357ebd; color: #31708f; }
-/* line 150, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_typography.scss */
+/* line 153, ../sass/_typography.scss */
 .context.orange { background: #fcf8e3; border-color: #eea236; color: #8a6d3b; }
 
-/* line 1, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 1, ../sass/_structure.scss */
 * { position: relative; }
 
-/* line 5, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 5, ../sass/_structure.scss */
 .pos-right { position: absolute; right: 20px; }
 
-/* line 10, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 10, ../sass/_structure.scss */
 .pos-left { position: absolute; left: 20px; }
 
-/* line 15, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 15, ../sass/_structure.scss */
 .text-left { text-align: left; }
 
-/* line 19, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 19, ../sass/_structure.scss */
 .text-right { text-align: right; }
 
-/* line 23, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 23, ../sass/_structure.scss */
 .text-center { text-align: center; }
 
-/* line 27, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 27, ../sass/_structure.scss */
 section { display: block; width: calc(100% - $padding*2); max-width: 860px; padding: 20px; background: #fff; border: 1px solid #ddd; border-bottom-width: 3px; margin: 20px auto; }
 
-/* line 38, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
+/* line 38, ../sass/_structure.scss */
 .wrapper { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; border: 1px solid rgba(0, 0, 0, 0.2); padding: 0 20px 20px 20px; margin-bottom: 20px; background: #f9f9f9; }
 
-/* line 46, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
-.popup { position: fixed; top: 20px; left: 20px; right: 20px; text-align: center; background: #f3f3f3; border: 1px solid #555555; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; padding: 10px 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05); }
-/* line 58, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
-.popup.red { background-color: #f2dede; color: #a94442; border-color: #d43f3a; }
-/* line 63, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
-.popup.green { background-color: #dff0d8; color: #3c763d; border-color: #4cae4c; }
-/* line 68, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
-.popup.blue { background-color: #d9edf7; color: #31708f; border-color: #357ebd; }
-/* line 73, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_structure.scss */
-.popup.orange { background-color: #fcf8e3; color: #8a6d3b; border-color: #eea236; }
+/* line 46, ../sass/_structure.scss */
+#popup { position: fixed; z-index: 9999; top: 20px; left: 20px; right: 20px; }
+/* line 53, ../sass/_structure.scss */
+#popup div { text-align: center; background: #f3f3f3; border: 1px solid #555555; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; padding: 10px 0; box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05); margin-bottom: 5px; }
+/* line 62, ../sass/_structure.scss */
+#popup div.red { background-color: #f2dede; color: #a94442; border-color: #d43f3a; }
+/* line 67, ../sass/_structure.scss */
+#popup div.green { background-color: #dff0d8; color: #3c763d; border-color: #4cae4c; }
+/* line 72, ../sass/_structure.scss */
+#popup div.blue { background-color: #d9edf7; color: #31708f; border-color: #357ebd; }
+/* line 77, ../sass/_structure.scss */
+#popup div.orange { background-color: #fcf8e3; color: #8a6d3b; border-color: #eea236; }
 
 /* _button.scss */
-/* line 3, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_button.scss */
+/* line 3, ../sass/_button.scss */
 .button { border: 1px solid #cccccc; border-bottom-width: 2px; border-bottom-color: rgba(204, 204, 204, 0.75); background: white; color: #555555; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px white; font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
-/* line 51, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 .button:hover { cursor: pointer; border: 1px solid #b3b3b3; border-bottom-width: 2px; border-bottom-color: rgba(179, 179, 179, 0.75); background: #e6e6e6; color: #555555; text-shadow: 0px -1px 0px #e6e6e6; }
-/* line 62, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 62, ../sass/_mixins.scss */
 .button.small { font-size: 9px; text-transform: uppercase; }
-/* line 67, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 67, ../sass/_mixins.scss */
 .button.large { font-size: 15px; }
-/* line 71, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
-.button.block { display: block; }
+/* line 71, ../sass/_mixins.scss */
+.button.block { display: block; text-align: center; }
 
-/* line 7, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_button.scss */
+/* line 7, ../sass/_button.scss */
 .button-green { border: 1px solid #4cae4c; border-bottom-width: 2px; border-bottom-color: rgba(76, 174, 76, 0.75); background: #5cb85c; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
-/* line 51, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 .button-green:hover { cursor: pointer; border: 1px solid #398439; border-bottom-width: 2px; border-bottom-color: rgba(57, 132, 57, 0.75); background: #47a447; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
-/* line 62, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 62, ../sass/_mixins.scss */
 .button-green.small { font-size: 9px; text-transform: uppercase; }
-/* line 67, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 67, ../sass/_mixins.scss */
 .button-green.large { font-size: 15px; }
-/* line 71, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
-.button-green.block { display: block; }
+/* line 71, ../sass/_mixins.scss */
+.button-green.block { display: block; text-align: center; }
 
-/* line 19, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_button.scss */
+/* line 19, ../sass/_button.scss */
 .button-blue { border: 1px solid #357ebd; border-bottom-width: 2px; border-bottom-color: rgba(53, 126, 189, 0.75); background: #428bca; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
-/* line 51, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 .button-blue:hover { cursor: pointer; border: 1px solid #285e8e; border-bottom-width: 2px; border-bottom-color: rgba(40, 94, 142, 0.75); background: #3276b1; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
-/* line 62, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 62, ../sass/_mixins.scss */
 .button-blue.small { font-size: 9px; text-transform: uppercase; }
-/* line 67, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 67, ../sass/_mixins.scss */
 .button-blue.large { font-size: 15px; }
-/* line 71, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
-.button-blue.block { display: block; }
+/* line 71, ../sass/_mixins.scss */
+.button-blue.block { display: block; text-align: center; }
 
-/* line 31, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_button.scss */
+/* line 31, ../sass/_button.scss */
 .button-red { border: 1px solid #d43f3a; border-bottom-width: 2px; border-bottom-color: rgba(212, 63, 58, 0.75); background: #d9534f; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
-/* line 51, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 .button-red:hover { cursor: pointer; border: 1px solid #ac2925; border-bottom-width: 2px; border-bottom-color: rgba(172, 41, 37, 0.75); background: #d2322d; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
-/* line 62, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 62, ../sass/_mixins.scss */
 .button-red.small { font-size: 9px; text-transform: uppercase; }
-/* line 67, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 67, ../sass/_mixins.scss */
 .button-red.large { font-size: 15px; }
-/* line 71, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
-.button-red.block { display: block; }
+/* line 71, ../sass/_mixins.scss */
+.button-red.block { display: block; text-align: center; }
 
-/* line 43, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_button.scss */
+/* line 43, ../sass/_button.scss */
 .button-orange { border: 1px solid #eea236; border-bottom-width: 2px; border-bottom-color: rgba(238, 162, 54, 0.75); background: #f0ad4e; color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; display: inline-block; padding: 5px 7px; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; font-size: 12px; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); font-family: "Roboto", sans-serif; -webkit-text-stroke: 0px; }
-/* line 51, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 .button-orange:hover { cursor: pointer; border: 1px solid #d58512; border-bottom-width: 2px; border-bottom-color: rgba(213, 133, 18, 0.75); background: #ed9c28; color: white; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
-/* line 62, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 62, ../sass/_mixins.scss */
 .button-orange.small { font-size: 9px; text-transform: uppercase; }
-/* line 67, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
+/* line 67, ../sass/_mixins.scss */
 .button-orange.large { font-size: 15px; }
-/* line 71, C:/Users/deagle/Google Drive/web_play_gs/styleguide/sass/_mixins.scss */
-.button-orange.block { display: block; }
-
-/* line 17, ../sass/main.scss */
-.context { margin-top: 20px; }
-
-/* line 21, ../sass/main.scss */
-nav { position: fixed; top: 123px; right: 0; width: 175px; font-family: "Roboto", sans-serif; padding: 5px 0; }
-/* line 32, ../sass/main.scss */
-nav ul { list-style: none; margin: 0; padding: 0; }
-/* line 37, ../sass/main.scss */
-nav ul a { display: block; color: #357ebd; text-decoration: none; -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; padding: 5px 10px; border-left: 3px solid transparent; }
-/* line 45, ../sass/main.scss */
-nav ul a:hover { background: #d9edf7; color: #285e8e; border-color: #357ebd; }
-/* line 53, ../sass/main.scss */
-nav ul ul a { font-size: 80%; padding: 3px 20px; border-width: 2px; }
-/* line 59, ../sass/main.scss */
-nav ul ul:hover { color: #285e8e; border-color: #357ebd; }
+/* line 71, ../sass/_mixins.scss */
+.button-orange.block { display: block; text-align: center; }

@@ -4,31 +4,18 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,500,700|Ubuntu+Condensed" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.github.com/ccampbell/rainbow/master/themes/github.css">
     <script src="js/jquery-latest.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/rainbow-custom.min.js"></script>
+    <script src="js/styleguide.js"></script>
     <title>Styleguide</title>
-
-    <script>
-        function popup(message, color, duration) {
-            $('<div class="popup ' + color + '">' + message + '</div>').appendTo('body').hide().fadeIn().delay(duration).fadeOut();
-        };
-
-        $(document).on('ready', function() {
-            $('.group').each(function(index) {
-                var grouplink = $('<li><a href="#group-' + index + '">' + $(this).find('h2').html() + '</a><ul></ul></li>');
-                $(this).attr('id', 'group-' + index);
-                $(this).find('h3.underline').each(function(i) {
-                    grouplink.find('ul').append('<li><a href="#wrapper-' + index + '-' + i + '">' + $(this).html() + '</a></li>');
-                    $(this).attr('id', 'wrapper-' + index + '-' + i);
-                });
-                grouplink.appendTo('nav > ul');
-            });
-        });
-
-
-    </script>
+    <script>var genCode = true;</script>
 </head>
 
 <body>
+<div id="popup"></div>
 <section>
     <h1 class="uppercase inline">Styleguide</h1>
     <h3 class="sub inline pos-right">Dan Eagle <small>&copy; 2014</small></h3>
@@ -36,13 +23,57 @@
 <nav>
     <ul>
     </ul>
+    <div class="button-blue block large" id="codeToggle" style="margin-top:10px;">code toggle</div>
 </nav>
 <section>
+    <div class="group">
+        <h2>Buttons</h2>
+        <div class="wrapper">
+            <h3 class="underline">Colors</h3>
+            <br />
+            <div class="button">Button</div>
+            <div class="button-red">Button</div>
+            <div class="button-green">Button</div>
+            <div class="button-blue">Button</div>
+            <div class="button-orange">Button</div><br /><br />
+            <pre data-language="html">&lt;div class="button">...&lt;/div></pre>
+            <pre data-language="html">&lt;div class="button-red">...&lt;/div></pre>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Sizes</h3>
+            <h4 class="sub uppercase">Small Buttons</h4>
+            <div class="button small">Button</div>
+            <div class="button-blue small">Button</div><br /><br />
+            <pre data-language="html">&lt;div class="button small">...&lt;/div></pre>
+            <h4 class="sub uppercase">Medium Buttons</h4>
+            <div class="button">Button</div>
+            <div class="button-blue">Button</div><br /><br />
+            <pre data-language="html">&lt;div class="button">...&lt;/div></pre>
+            <h4 class="sub uppercase">Large Buttons</h4>
+            <div class="button large">Button</div>
+            <div class="button-blue large">Button</div><br /><br />
+            <pre data-language="html">&lt;div class="button large">...&lt;/div></pre>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Disabled</h3>
+            <br />
+            <div class="button disabled">Button</div>
+            <div class="button-red disabled">Button</div>
+            <div class="button-green disabled">Button</div>
+            <div class="button-blue disabled">Button</div>
+            <div class="button-orange disabled">Button</div><br /><br />
+            <pre data-language="html">&lt;div class="button disabled">...&lt;/div></pre>
+        </div>
+    </div>
     <div class="group">
         <h2>Typography</h2>
         <div class="wrapper">
             <h3 class="underline">Body Copy</h3>
-            <p class="lead">Familiaritatem sunt est graviterque relinqueret non nisi veniam non quo</p>
+            <h4 class="sub uppercase">Leading Text</h4>
+            <pre data-language="html">&lt;p class="lead">...&lt;/p></pre>
+            <p class="lead">Sunt est graviterque relinqueret non nisi veniam non quo</p>
+            <h4 class="sub uppercase">Body Text</h4>
+            <pre data-language="html">&lt;p>...&lt;/p></pre>
             <p>Aut id veniam nulla irure, aute ut possumus, hic sunt voluptate occaecat de
                 appellat concursionibus se expetendis. Occaecat labore ingeniis, incurreret
                 culpa mandaremus consequat, fabulas si nostrud, officia sint id consequat
@@ -65,6 +96,11 @@
                 ita id singulis magna ab laborum in dolore sint
                 <footer>te esse iudicem tamen</footer>
             </blockquote>
+            <pre data-language="html">
+&lt;blockquote>
+    ...
+    &lt;footer>...&lt;/footer>
+&lt;/blockquote></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Lists</h3>
@@ -104,7 +140,11 @@
                     fidelissimae laboris tempor cernantur quo comprehenderit comprehenderit legam
                     appellat id legam</dd>
             </dl>
-
+            <pre data-language="html">
+&lt;dl><br/>
+    &lt;dt>...&lt;/dt>
+    &lt;dd>...&lt;/dd>
+&lt;/dl></pre>
             <h4 class="sub uppercase">Horizontal</h4>
             <dl class="dl-horizontal">
                 <dt>singulis occaecat litteris</dt>
@@ -115,6 +155,11 @@
                     fidelissimae laboris tempor cernantur quo comprehenderit comprehenderit legam
                     appellat id legam</dd>
             </dl>
+            <pre data-language="html">
+&lt;dl class="dl-horizontal">
+    &lt;dt>...&lt;/dt>
+    &lt;dd>...&lt;/dd>
+&lt;/dl></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Headings</h3>
@@ -124,13 +169,14 @@
             <h4>h4. Heading 4</h4>
             <h5>h5. Heading 5</h5>
             <h6>h6. Heading 6</h6>
-
+            <pre data-language="html">&lt;h3>...&lt;small>...&lt;/small>&lt;/h3></pre>
             <h1 class="sub">Sub Heading 1</h1>
             <h2 class="sub">Sub Heading 2</h2>
-            <h3 class="sub">Sub Heading 3</h3>
+            <h3 class="sub">Sub Heading 3 <small>Secondary text</small></h3>
             <h4 class="sub">Sub Heading 4</h4>
             <h5 class="sub">Sub Heading 5</h5>
             <h6 class="sub">Sub Heading 6</h6>
+            <pre data-language="html">&lt;h3 class="sub">...&lt;/h3></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Context or Alert Text</h3>
@@ -139,69 +185,46 @@
                 appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
                 minim expetendis
             </div>
+            <pre data-language="html">&lt;div class="context">...&lt;/div></pre>
             <div class="context red">
                 Red cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
                 appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
                 minim expetendis
             </div>
+            <pre data-language="html">&lt;div class="context red">...&lt;/div></pre>
             <div class="context green">
                 Green cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
                 appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
                 minim expetendis
             </div>
+            <pre data-language="html">&lt;div class="context green">...&lt;/div></pre>
             <div class="context blue">
                 Blue cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
                 appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
                 minim expetendis
             </div>
+            <pre data-language="html">&lt;div class="context blue">...&lt;/div></pre>
             <div class="context orange">
                 Orange cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
                 appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
                 minim expetendis
             </div>
+            <pre data-language="html">&lt;div class="context orange">...&lt;/div></pre>
         </div>
     </div>
     <div class="group">
         <h2>Code</h2>
         <div class="wrapper">
             <h4 class="sub uppercase">Inline</h4>
-            Lorem ipsum <code>code.inline</code> dolor...
+            Lorem ipsum <code>code.inline</code> dolor...<br /><br />
+            <pre data-language="html">&lt;code>...&lt;/code></pre>
             <h4 class="sub uppercase">Block</h4>
-            <code class="block">code.block</code>
+            <code class="block">code.block</code><br />
+            <pre data-language="html">&lt;code class="block">...&lt;/code></pre>
         </div>
     </div>
     <div class="group">
-        <h2>Buttons</h2>
-        <div class="wrapper">
-            <h4 class="sub uppercase">Small Buttons</h4>
-            <div class="button small">Button</div>
-            <div class="button-red small">Button</div>
-            <div class="button-green small">Button</div>
-            <div class="button-blue small">Button</div>
-            <div class="button-orange small">Button</div>
-
-            <h4 class="sub uppercase">Medium Buttons</h4>
-            <div class="button">Button</div>
-            <div class="button-red">Button</div>
-            <div class="button-green">Button</div>
-            <div class="button-blue">Button</div>
-            <div class="button-orange">Button</div>
-
-            <h4 class="sub uppercase">Large Buttons</h4>
-            <div class="button large">Button</div>
-            <div class="button-red large">Button</div>
-            <div class="button-green large">Button</div>
-            <div class="button-blue large">Button</div>
-            <div class="button-orange large">Button</div>
-
-            <h4 class="sub uppercase">Disabled Buttons</h4>
-            <div class="button small disabled">Button</div>
-            <div class="button disabled">Button</div>
-            <div class="button large disabled">Button</div>
-        </div>
-    </div>
-    <div class="group">
-        <h2 class="underline">Tables</h2>
+        <h2>Tables</h2>
         <div class="wrapper">
             <h3 class="underline">Normal</h3>
             <table>
@@ -209,7 +232,7 @@
         </div>
     </div>
     <div class="group">
-        <h2 class="underline">Forms</h2>
+        <h2>Forms</h2>
         <div class="wrapper">
             <h3 class="underline">Input</h3>
             <input type="text"/>
@@ -222,3 +245,4 @@
 </section>
 </body>
 </html>
+
