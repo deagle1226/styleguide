@@ -2,14 +2,45 @@
     position: relative;
 }
 
-.right {
+.pos-right {
     position: absolute;
     right: $padding;
 }
 
-.left {
+.pos-left {
     position: absolute;
     left: $padding;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    display: block;
+    width: calc(100% - $padding*2);
+    max-width: $widthPadding;
+    padding: $padding;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom-width: 3px;
+    margin: $padding auto;
+}
+
+.wrapper {
+    @include border-radius(7px);
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0 $padding $padding $padding;
+    margin-bottom: $padding;
+    background: #f9f9f9;
 }
 
 .popup {

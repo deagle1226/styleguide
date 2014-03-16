@@ -1,25 +1,67 @@
 // MAIN
+@import 'normalize';
 @import 'variables';
 @import 'mixins';
 @import 'typography';
 @import 'structure';
 @import 'button';
 
-.cssTest {
-    width: 800px;
-    margin: 20px auto;
-    display:block;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-bottom-width: 3px;
-    padding: $padding;
-    //padding-bottom: 0;
+* {
+    //margin-bottom: $padding !important;
+}
 
-    * {
-        margin-bottom: $padding;
+h1, h2, h3, h4, h5, h6 {
+    //margin-bottom: 0px;
+}
+
+.context {
+    margin-top: $padding;
+}
+
+nav {
+    position: fixed;
+    top: 123px;
+    right: 0;
+//    background: #fff;
+//    border: 1px solid #ddd;
+//    border-bottom-width: 3px;
+    width: 175px;
+    font-family: $font;
+    padding: 5px 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: block;
+            color: $border-blue;
+            text-decoration: none;
+            @include transition();
+            padding: 5px 10px;
+            border-left: 3px solid transparent;
+
+            &:hover {
+                background: $background-blue-light;
+                color: $border-blue-hover;
+                border-color: $border-blue;
+            }
+        }
+
+        ul {
+            a {
+                font-size: 80%;
+                padding: 3px 20px;
+                border-width: 2px;
+            }
+
+            &:hover {
+                //background: $background-blue-light;
+                color: $border-blue-hover;
+                border-color: $border-blue;
+            }
+        }
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        margin-bottom: 0px;
-    }
 }

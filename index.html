@@ -11,82 +11,214 @@
         function popup(message, color, duration) {
             $('<div class="popup ' + color + '">' + message + '</div>').appendTo('body').hide().fadeIn().delay(duration).fadeOut();
         };
+
+        $(document).on('ready', function() {
+            $('.group').each(function(index) {
+                var grouplink = $('<li><a href="#group-' + index + '">' + $(this).find('h2').html() + '</a><ul></ul></li>');
+                $(this).attr('id', 'group-' + index);
+                $(this).find('h3.underline').each(function(i) {
+                    grouplink.find('ul').append('<li><a href="#wrapper-' + index + '-' + i + '">' + $(this).html() + '</a></li>');
+                    $(this).attr('id', 'wrapper-' + index + '-' + i);
+                });
+                grouplink.appendTo('nav > ul');
+            });
+        });
+
+
     </script>
 </head>
 
 <body>
-<div class="cssTest">
+<section>
     <h1 class="uppercase inline">Styleguide</h1>
-    <h2 class="sub inline right">Dan Eagle</h2>
-</div>
-<div class="cssTest">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <h3 class="sub inline pos-right">Dan Eagle <small>&copy; 2014</small></h3>
+</section>
+<nav>
+    <ul>
+    </ul>
+</nav>
+<section>
+    <div class="group">
+        <h2>Typography</h2>
+        <div class="wrapper">
+            <h3 class="underline">Body Copy</h3>
+            <p class="lead">Familiaritatem sunt est graviterque relinqueret non nisi veniam non quo</p>
+            <p>Aut id veniam nulla irure, aute ut possumus, hic sunt voluptate occaecat de
+                appellat concursionibus se expetendis. Occaecat labore ingeniis, incurreret
+                culpa mandaremus consequat, fabulas si nostrud, officia sint id consequat
+                arbitrantur. Velit aut offendit, illum iis occaecat se fore. Et malis sunt tamen
+                mentitum. Iudicem si quibusdam an do nisi offendit aliquip, an ea aliqua
+                cupidatat e appellat transferrem sed quibusdam. Probant ubi labore. Duis commodo
+            </p>
+            <p>Qui quis aliqua o proident. Ea ex minim eiusmod. Proident labore multos tempor
+                aute. Officia ne illum expetendis. Eiusmod sed dolore aliquip, qui enim
+                distinguantur. Cupidatat ita dolor cupidatat, tempor quis legam id irure, summis
+                officia ullamco e e incididunt philosophari. Fore ut quo dolor probant, a nam
+                dolor aliquip, multos mentitum arbitrantur a ad si irure commodo hic illum quo
+                est malis ingeniis, veniam appellat fidelissimae et iudicem elit commodo, enim
+                ingeniis ita philosophari.
+            </p>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Blockquotes</h3>
+            <blockquote>aute aliqua velit admodum transferrem duis appellat quis cillum do graviterque
+                ita id singulis magna ab laborum in dolore sint
+                <footer>te esse iudicem tamen</footer>
+            </blockquote>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Lists</h3>
+            <h4 class="sub uppercase">Unordered</h4>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
 
-    <h1 class="sub">Sub Heading 1</h1>
-    <h2 class="sub">Sub Heading 2</h2>
-    <h3 class="sub">Sub Heading 3</h3>
-    <h4 class="sub">Sub Heading 4</h4>
-    <h5 class="sub">Sub Heading 5</h5>
-    <h6 class="sub">Sub Heading 6</h6>
+            <h4 class="sub uppercase">Ordered</h4>
+            <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ol>
 
-    <h3>Code Snippets</h3>
-    <code>code.inline</code>
-    <code class="block">code.block</code>
+            <h4 class="sub uppercase">Inline</h4>
+            <ul class="inline-list">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Description</h3>
+            <h4 class="sub uppercase">Vertical</h4>
+            <dl>
+                <dt>singulis occaecat litteris</dt>
+                <dd>voluptate consequat dolor commodo commodo minim efflorescere illum a possumus
+                    nam eruditionem sed e vidisse a transferrem eu ubi laboris</dd>
+                <dt>summis quae legam</dt>
+                <dd>o despicationes sint esse tractavissent cohaerescant doctrina singulis
+                    fidelissimae laboris tempor cernantur quo comprehenderit comprehenderit legam
+                    appellat id legam</dd>
+            </dl>
 
-    <h3>Context or Alert Text</h3>
-    <div class="context">
-        Normal cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
-        appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
-        minim expetendis
+            <h4 class="sub uppercase">Horizontal</h4>
+            <dl class="dl-horizontal">
+                <dt>singulis occaecat litteris</dt>
+                <dd>voluptate consequat dolor commodo commodo minim efflorescere illum a possumus
+                    nam eruditionem sed e vidisse a transferrem eu ubi laboris</dd>
+                <dt>summis quae legam</dt>
+                <dd>o despicationes sint esse tractavissent cohaerescant doctrina singulis
+                    fidelissimae laboris tempor cernantur quo comprehenderit comprehenderit legam
+                    appellat id legam</dd>
+            </dl>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Headings</h3>
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2 <small>Secondary text</small></h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+
+            <h1 class="sub">Sub Heading 1</h1>
+            <h2 class="sub">Sub Heading 2</h2>
+            <h3 class="sub">Sub Heading 3</h3>
+            <h4 class="sub">Sub Heading 4</h4>
+            <h5 class="sub">Sub Heading 5</h5>
+            <h6 class="sub">Sub Heading 6</h6>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Context or Alert Text</h3>
+            <div class="context">
+                Normal cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
+                appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
+                minim expetendis
+            </div>
+            <div class="context red">
+                Red cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
+                appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
+                minim expetendis
+            </div>
+            <div class="context green">
+                Green cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
+                appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
+                minim expetendis
+            </div>
+            <div class="context blue">
+                Blue cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
+                appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
+                minim expetendis
+            </div>
+            <div class="context orange">
+                Orange cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
+                appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
+                minim expetendis
+            </div>
+        </div>
     </div>
-    <div class="context red">
-        Red cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
-        appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
-        minim expetendis
+    <div class="group">
+        <h2>Code</h2>
+        <div class="wrapper">
+            <h4 class="sub uppercase">Inline</h4>
+            Lorem ipsum <code>code.inline</code> dolor...
+            <h4 class="sub uppercase">Block</h4>
+            <code class="block">code.block</code>
+        </div>
     </div>
-    <div class="context green">
-        Green cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
-        appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
-        minim expetendis
+    <div class="group">
+        <h2>Buttons</h2>
+        <div class="wrapper">
+            <h4 class="sub uppercase">Small Buttons</h4>
+            <div class="button small">Button</div>
+            <div class="button-red small">Button</div>
+            <div class="button-green small">Button</div>
+            <div class="button-blue small">Button</div>
+            <div class="button-orange small">Button</div>
+
+            <h4 class="sub uppercase">Medium Buttons</h4>
+            <div class="button">Button</div>
+            <div class="button-red">Button</div>
+            <div class="button-green">Button</div>
+            <div class="button-blue">Button</div>
+            <div class="button-orange">Button</div>
+
+            <h4 class="sub uppercase">Large Buttons</h4>
+            <div class="button large">Button</div>
+            <div class="button-red large">Button</div>
+            <div class="button-green large">Button</div>
+            <div class="button-blue large">Button</div>
+            <div class="button-orange large">Button</div>
+
+            <h4 class="sub uppercase">Disabled Buttons</h4>
+            <div class="button small disabled">Button</div>
+            <div class="button disabled">Button</div>
+            <div class="button large disabled">Button</div>
+        </div>
     </div>
-    <div class="context blue">
-        Blue cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
-        appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
-        minim expetendis
+    <div class="group">
+        <h2 class="underline">Tables</h2>
+        <div class="wrapper">
+            <h3 class="underline">Normal</h3>
+            <table>
+            </table>
+        </div>
     </div>
-    <div class="context orange">
-        Orange cernantur sunt doctrina arbitrantur adipisicing tractavissent possumus fabulas
-        appellat vidisse labore pariatur quo graviterque distinguantur eram quis ne
-        minim expetendis
+    <div class="group">
+        <h2 class="underline">Forms</h2>
+        <div class="wrapper">
+            <h3 class="underline">Input</h3>
+            <input type="text"/>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Select</h3>
+            <select></select>
+        </div>
     </div>
-
-
-    <h2>Buttons</h2>
-    <h4 class="sub uppercase">Small Buttons</h4>
-    <div class="button small">Button</div>
-    <div class="button-red small">Button</div>
-    <div class="button-green small">Button</div>
-    <div class="button-blue small">Button</div>
-    <div class="button-orange small">Button</div>
-
-    <h4 class="sub uppercase">Medium Buttons</h4>
-    <div class="button">Button</div>
-    <div class="button-red">Button</div>
-    <div class="button-green">Button</div>
-    <div class="button-blue">Button</div>
-    <div class="button-orange">Button</div>
-
-    <h4 class="sub uppercase">Large Buttons</h4>
-    <div class="button large">Button</div>
-    <div class="button-red large">Button</div>
-    <div class="button-green large">Button</div>
-    <div class="button-blue large">Button</div>
-    <div class="button-orange large">Button</div>
-</div>
+</section>
 </body>
 </html>

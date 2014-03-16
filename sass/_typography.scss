@@ -41,6 +41,26 @@ h1, h2, h3, h4, h5, h6 {
     &.inline {
         display: inline-block;
     }
+
+    small {
+        opacity: 0.5;
+        font-size: 75%;
+    }
+
+    &.underline {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    &.lead {
+        font-size: 125%;
+        font-weight: bold;
+    }
 }
 
 code {
@@ -55,6 +75,50 @@ code {
     &.block {
         display: block;
         padding: $padding/2;
+    }
+}
+
+blockquote {
+    display: block;
+    background: rgba(0,0,0,0.05);
+    border-left: 3px solid $darkGray;
+    padding: $padding;
+
+    footer {
+        opacity: 0.5;
+        padding-top: $padding;
+        font-style: italic;
+
+        &:before {
+            content: "- ";
+        }
+    }
+}
+
+dl {
+    margin: 0;
+    dt {
+        font-weight: bold;
+        line-height: 1.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    dd {
+        margin: 0;
+    }
+
+    &.dl-horizontal {
+        dt {
+            float: left;
+            width: 160px;
+        }
+
+        dd {
+            line-height: 1.5em;
+            margin-left: 180px;
+        }
     }
 }
 
