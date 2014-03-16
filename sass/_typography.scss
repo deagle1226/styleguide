@@ -1,8 +1,8 @@
 /* _typography.scss */
 
 body {
-    font-size: 100%;
-    font-family: $font-slab;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
     color: $darkGray;
     background: #f3f3f3;
     -webkit-text-stroke: 0.3px;
@@ -28,13 +28,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-    font-family: $font-slab;
     -webkit-text-stroke: 0.6px;
-    line-height: 40px;
+    line-height: $headings-line-height;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
 
     &.sub {
         opacity: 0.5;
-        font-family: $font;
+        font-family: $font-family-sans-serif;
         font-weight: 700;
     }
 
@@ -53,7 +54,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
 }
 
 p {
@@ -71,7 +92,7 @@ code, pre {
     @include border-radius(3px);
     display: inline-block;
     padding: $padding/4 $padding/2;
-    font-family: $font-mono;
+    //font-family: $font-mono;
     font-size: 80%;
     -webkit-text-stroke: 0;
 
@@ -94,6 +115,25 @@ blockquote {
 
         &:before {
             content: "- ";
+        }
+    }
+}
+
+ul, ol {
+
+    ul, ol {
+        font-size: 80%;
+        padding-left: $padding;
+    }
+
+    &.inline-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            margin-right: $padding;
         }
     }
 }

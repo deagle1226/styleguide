@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+
+    td {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: $padding/3 5px;
+    }
+
+    th {
+        border-bottom: 3px solid rgba(0,0,0,0.1);
+        text-align: left;
+        padding: $padding/2 5px;
+    }
+
+    &.condensed {
+        td {
+            padding: $padding/6 5px;
+        }
+        th {
+            padding: $padding/5 5px;
+        }
+    }
+
+    &.hoverable {
+        tr:hover {
+            background: rgba(0,0,0,0.025);
+        }
+    }
+
+    &.bordered {
+        border-collapse: collapse;
+        border-bottom: 3px solid rgba(0,0,0,0.1);
+
+        td, th {
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        th {
+            border-bottom-width: 3px;
+        }
+    }
+}

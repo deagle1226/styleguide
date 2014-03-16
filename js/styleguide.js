@@ -27,6 +27,18 @@ $(document).on('ready', function() {
     $('#codeToggle').on('click', function() {
         $('pre').toggle();
     });
+    $('#popupBlue').on('click', function() {
+        popup('Quita senserit offendit cernantur reprehenderit sed varias voluptatibus', 'blue', 5000);
+    });
+    $('#popupRed').on('click', function() {
+        popup('Quita senserit offendit cernantur reprehenderit sed varias voluptatibus', 'red', 5000);
+    });
+    $('#popupGreen').on('click', function() {
+        popup('Quita senserit offendit cernantur reprehenderit sed varias voluptatibus', 'green', 5000);
+    });
+    $('#popupOrange').on('click', function() {
+        popup('Quita senserit offendit cernantur reprehenderit sed varias voluptatibus', 'orange', 5000);
+    });
 
     // Smooth Srolling
     $('nav').on('click', 'a', function(){

@@ -26,7 +26,7 @@
     $borderWidthHover: $borderWidth,
     $borderStyleHover: $borderStyle,
     $borderColorHover: darken($borderColor, 10%),
-    $fontSize: 12px,
+    $fontSize: $font-size-base,
     $paddingVert: 5px,
     $paddingHoriz: 7px,
     $borderBottomWidthMulti: 2,
@@ -45,7 +45,7 @@
     @include transition();
     font-size: $fontSize;
     text-shadow: 0px -1px 0px $textShadowColor;
-    font-family: $font;
+    font-family: $font-family-sans-serif;
     -webkit-text-stroke: 0px;
     text-decoration: none;
     font-weight: bold;
@@ -68,6 +68,7 @@
 
     &.large {
         font-size: $fontSize * 1.25;
+        padding: $paddingVert * 1.25 $paddingHoriz * 1.25;
     }
 
     &.block {

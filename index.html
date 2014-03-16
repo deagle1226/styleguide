@@ -1,7 +1,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--
     <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,500,700|Ubuntu+Condensed" rel="stylesheet" type="text/css">
+-->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/styleguide.css">
@@ -17,13 +19,17 @@
 <body>
 <div id="popup"></div>
 <section>
-    <h1 class="uppercase inline">Styleguide</h1>
-    <h3 class="sub inline pos-right">Dan Eagle <small>&copy; 2014</small></h3>
+    <h1 class="uppercase inline" style="line-height:60px;">The Styleguide</h1>
+    <h3 class="sub inline pos-right" style="line-height:60px;">Dan Eagle <small>&copy; 2014</small></h3>
 </section>
 <nav>
     <ul>
     </ul>
     <div class="button-blue block large" id="codeToggle" style="margin-top:10px;">code toggle</div>
+    <div class="button-red block" id="popupRed" style="margin-top:10px;">popup red</div>
+    <div class="button-green block" id="popupGreen" style="margin-top:10px;">popup green</div>
+    <div class="button-blue block" id="popupBlue" style="margin-top:10px;">popup blue</div>
+    <div class="button-orange block" id="popupOrange" style="margin-top:10px;">popup orange</div>
 </nav>
 <section>
     <div class="group">
@@ -53,6 +59,11 @@
             <div class="button large">Button</div>
             <div class="button-blue large">Button</div><br /><br />
             <pre data-language="html">&lt;div class="button large">...&lt;/div></pre>
+            <h4 class="sub uppercase">Block Buttons</h4>
+            <div class="button block">Button</div><br />
+            <div class="button-blue block large">Button</div>
+            <pre data-language="html">&lt;div class="button block">...&lt;/div></pre>
+            <pre data-language="html">&lt;div class="button-blue large block">...&lt;/div></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Disabled</h3>
@@ -70,10 +81,9 @@
         <div class="wrapper">
             <h3 class="underline">Body Copy</h3>
             <h4 class="sub uppercase">Leading Text</h4>
-            <pre data-language="html">&lt;p class="lead">...&lt;/p></pre>
             <p class="lead">Sunt est graviterque relinqueret non nisi veniam non quo</p>
+            <pre data-language="html">&lt;p class="lead">...&lt;/p></pre>
             <h4 class="sub uppercase">Body Text</h4>
-            <pre data-language="html">&lt;p>...&lt;/p></pre>
             <p>Aut id veniam nulla irure, aute ut possumus, hic sunt voluptate occaecat de
                 appellat concursionibus se expetendis. Occaecat labore ingeniis, incurreret
                 culpa mandaremus consequat, fabulas si nostrud, officia sint id consequat
@@ -89,6 +99,7 @@
                 est malis ingeniis, veniam appellat fidelissimae et iudicem elit commodo, enim
                 ingeniis ita philosophari.
             </p>
+            <pre data-language="html">&lt;p>...&lt;/p></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Blockquotes</h3>
@@ -107,26 +118,46 @@
             <h4 class="sub uppercase">Unordered</h4>
             <ul>
                 <li>List item 1</li>
-                <li>List item 2</li>
+                <li>List item 2
+                    <ul>
+                        <li>Sub List item 1</li>
+                        <li>Sub List item 2</li>
+                    </ul>
+                </li>
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-
+            <pre data-language="html">
+&lt;ul>
+    &lt;li>...&lt;/li>
+&lt;/ul></pre>
             <h4 class="sub uppercase">Ordered</h4>
             <ol>
                 <li>List item 1</li>
-                <li>List item 2</li>
+                <li>List item 2
+                    <ol>
+                        <li>Sub List item 1</li>
+                        <li>Sub List item 2</li>
+                    </ol>
+                </li>
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ol>
-
+            <pre data-language="html">
+&lt;ol>
+    &lt;li>...&lt;/li>
+&lt;/ol></pre>
             <h4 class="sub uppercase">Inline</h4>
             <ul class="inline-list">
                 <li>List item 1</li>
                 <li>List item 2</li>
                 <li>List item 3</li>
                 <li>List item 4</li>
-            </ul>
+            </ul><br />
+            <pre data-language="html">
+&lt;ul class="inline-list">
+    &lt;li>...&lt;/li>
+&lt;/ul></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Description</h3>
@@ -226,8 +257,42 @@
     <div class="group">
         <h2>Tables</h2>
         <div class="wrapper">
-            <h3 class="underline">Normal</h3>
+            <h3 class="underline">Normal</h3><br />
             <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre data-language="html">&lt;table>...&lt;/table></pre>
+        </div>
+        <div class="wrapper">
+            <h3 class="underline">Bordered</h3><br />
+            <table class="bordered">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -258,9 +323,10 @@
                 </tbody>
             </table>
         </div>
+        <pre data-language="html">&lt;table class="bordered">...&lt;/table></pre>
         <div class="wrapper">
-            <h3 class="underline">Bordered</h3>
-            <table>
+            <h3 class="underline">Hover rows</h3><br />
+            <table class="hoverable">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -290,9 +356,10 @@
                     </tr>
                 </tbody>
             </table>
+            <pre data-language="html">&lt;table class="hoverable">...&lt;/table></pre>
         </div>
         <div class="wrapper">
-            <h3 class="underline">Hover rows</h3>
+            <h3 class="underline">Contextual colors</h3><br />
             <table>
                 <thead>
                     <tr>
@@ -323,10 +390,11 @@
                     </tr>
                 </tbody>
             </table>
+            <pre data-language="html">&lt;table class="?????">...&lt;/table></pre>
         </div>
         <div class="wrapper">
-            <h3 class="underline">Contextual colors</h3>
-            <table>
+            <h3 class="underline">Condensed</h3><br />
+            <table class="condensed">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -356,52 +424,108 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="wrapper">
-            <h3 class="underline">Condensed</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <pre data-language="html">&lt;table class="condensed">...&lt;/table></pre>
         </div>
     </div>
     <div class="group">
         <h2>Forms</h2>
         <div class="wrapper">
             <h3 class="underline">Input</h3>
-            <input type="text"/>
+            <h4 class="sub uppercase">Normal</h4>
+            <input type="text" placeholder="Input Field" /><br />
+            <pre data-language="html">&lt;input type="text" /></pre>
+            <h4 class="sub uppercase">Disabled</h4>
+            <input type="text" placeholder="Input Field" disabled /><br />
+            <pre data-language="html">&lt;input type="text" disabled /></pre>
+            <h4 class="sub uppercase">Block</h4>
+            <input type="text" placeholder="Input Field" class="block" />
+            <pre data-language="html">&lt;input type="text" class="block" /></pre>
         </div>
         <div class="wrapper">
             <h3 class="underline">Select</h3>
-            <select></select>
+            <h4 class="sub uppercase">Normal</h4>
+            <select>
+                <option>Option One</option>
+                <option>Option Two</option>
+            </select><br />
+            <pre data-language="html">&lt;select>...&lt;/select></pre>
+            <h4 class="sub uppercase">Disabled</h4>
+            <select disabled>
+                <option>Option One</option>
+                <option>Option Two</option>
+            </select><br />
+            <pre data-language="html">&lt;select disabled>...&lt;/select></pre>
+            <h4 class="sub uppercase">Block</h4>
+            <select class="block">
+                <option>Option One</option>
+                <option>Option Two</option>
+            </select>
+            <pre data-language="html">&lt;select class="block">...&lt;/select></pre>
         </div>
     </div>
+
+    <p>
+        Deserunt elit iudicem est excepteur hic varias fabulas, qui anim incurreret,
+        legam ut consequat ad magna an aliqua appellat an exquisitaque, labore
+        cohaerescant mandaremus irure ullamco, ne ingeniis consectetur non ut ex
+        despicationes. Irure si mandaremus, id veniam officia, consequat eram tamen si
+        velit ad quis sed quamquam ex veniam a commodo summis nisi id cillum iis
+        proident te eiusmod, tempor quem pariatur, eram tempor de eiusmod. Ad fore et
+        noster, ita nostrud distinguantur, ingeniis magna tempor quamquam hic an id
+        ipsum nostrud. Quis qui cupidatat, nulla vidisse senserit, nam enim enim veniam
+        ullamco, iis occaecat ad officia quo sunt in tempor ad malis do occaecat ita te
+        sint elit in tempor, non esse noster fore iudicem. Esse nescius instituendarum,
+        non quae id legam iis varias voluptate si irure fore nam quibusdam dolor
+        incididunt. Eiusmod ubi malis.
+    </p>
+
+    <p>
+        Do malis aute nisi doctrina ita admodum dolore incididunt admodum. Mandaremus
+        nam cupidatat, an malis ea varias. E proident a ingeniis. Irure mandaremus de
+        relinqueret sed ea magna coniunctione, quamquam anim ullamco laborum, quorum
+        tractavissent consequat dolor offendit in est commodo comprehenderit, ullamco
+        noster deserunt incididunt si tamen ne ad nisi excepteur o ex dolore iudicem
+        familiaritatem. Se veniam elit e incurreret ubi ita do consectetur, sed
+        excepteur adipisicing, do vidisse si pariatur aut cernantur quorum varias
+        ullamco noster, ad varias iudicem graviterque, quibusdam do dolor ingeniis, elit
+        occaecat reprehenderit. Nam in malis incididunt ad mentitum esse aliqua probant
+        enim.
+    </p>
+
+    <p>
+        Commodo varias ipsum ingeniis lorem. Singulis ubi quae ubi possumus enim esse
+        fabulas dolor. Ingeniis te enim, quo irure fugiat se incididunt, fore nostrud
+        ullamco ubi appellat fugiat anim incurreret legam. Incididunt varias anim
+        appellat amet. Velit laboris praetermissum, nescius irure deserunt occaecat, an
+        te legam ipsum dolore, singulis dolore noster et dolor. Ab quibusdam
+        graviterque.
+    </p>
+
+    <p>
+        Quis aut tempor. Nam nisi nulla non litteris ea cernantur ubi consequat, aut ubi
+        relinqueret, iudicem quae ut singulis firmissimum ubi lorem qui tempor est
+        nulla, non culpa fabulas eruditionem, in ad imitarentur do de irure transferrem.
+        Sed occaecat qui mentitum, pariatur in minim doctrina, ita eram pariatur,
+        laboris dolor vidisse vidisse. Aut enim quis se admodum. Nostrud illustriora nam
+        probant se arbitror e cupidatat. Excepteur quem incurreret incididunt iis quid
+        expetendis ne distinguantur, nostrud ut consequat, nam qui comprehenderit. Quid
+        ea possumus.
+    </p>
+
+    <p>
+        Legam consectetur admodum amet nescius, tamen ea commodo o multos, do multos
+        fidelissimae, fabulas quis nescius voluptate. Ullamco veniam nostrud. Aliquip ab
+        summis vidisse ex si ingeniis relinqueret iis excepteur illustriora et possumus,
+        cupidatat est culpa qui si sunt nostrud nostrud, et quo quae sint legam si
+        mandaremus ab singulis, vidisse culpa irure laboris veniam. Senserit non anim
+        appellat aut singulis si illum non expetendis multos incurreret senserit, fore a
+        ad quis iudicem an est nisi quamquam cupidatat do est fugiat hic nisi, quem sed
+        aut dolore tempor est pariatur a nisi. Varias expetendis te exquisitaque in
+        fabulas legam sunt eu malis te fugiat ab ea sunt nostrud ex quo de despicationes
+        id nulla laboris non incididunt ubi e nisi senserit exercitation, quamquam aut
+        cillum, in quem ab esse. Id velit possumus e eu si velit aliquip. Iis te culpa
+        commodo e aute commodo efflorescere.
+    </p>
 </section>
 </body>
 </html>
