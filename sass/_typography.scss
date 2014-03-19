@@ -3,7 +3,7 @@
 body {
     font-size: $font-size-base;
     font-family: $font-family-base;
-    color: $darkGray;
+    color: $text-default;
     background: #f3f3f3;
     -webkit-text-stroke: 0.3px;
 }
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &.underline {
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid $border-default-light;
     }
 }
 
@@ -88,7 +88,7 @@ p {
 
 code, pre {
     background: #efefef;
-    border: 1px solid #ddd;
+    border: 1px solid $border-default;
     @include border-radius(3px);
     display: inline-block;
     padding: $padding/4 $padding/2;
@@ -104,8 +104,8 @@ code, pre {
 
 blockquote {
     display: block;
-    background: rgba(0,0,0,0.05);
-    border-left: 3px solid $darkGray;
+    background: $background-default-light;
+    border-left: 3px solid $text-default;
     padding: $padding;
 
     footer {
@@ -167,8 +167,8 @@ dl {
 
 .context {
     display: block;
-    background: #f3f3f3;
-    border-left: 3px solid $darkGray;
+    background: $background-default-light;
+    border-left: 3px solid $text-default;
     padding: $padding;
     //font-weight: 700;
 

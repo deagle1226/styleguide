@@ -1,0 +1,151 @@
+span.label {
+    display: inline-block;
+    background: $text-default;
+    color: #fff;
+    padding: 4px 7px;
+    @include border-radius();
+    font-size: 100%;
+    font-family: $font-family-sans-serif;
+    -webkit-text-stroke: 0px;
+
+    &.small {
+        font-size: 80%;
+        padding: 2px 5px;
+        @include border-radius();
+    }
+
+    &.large {
+        font-size: 120%;
+        padding: 5px 10px;
+        @include border-radius();
+    }
+
+    &.red {
+        background: $background-red;
+    }
+    &.green {
+        background: $background-green;
+    }
+    &.blue {
+        background: $background-blue;
+    }
+    &.orange {
+        background: $background-orange;
+    }
+}
+
+span.badge {
+    display: inline-block;
+    background: $text-default;
+    color: #fff;
+    padding: 2px 7px;
+    @include border-radius(100px);
+    font-size: $font-size-small;
+    font-family: $font-family-sans-serif;
+    -webkit-text-stroke: 0px;
+
+    &.red {
+        background: $background-red;
+    }
+    &.green {
+        background: $background-green;
+    }
+    &.blue {
+        background: $background-blue;
+    }
+    &.orange {
+        background: $background-orange;
+    }
+
+    &.active {
+        color: $text-default;
+        background: #fff;
+
+        &.red {
+            color: $background-red;
+        }
+        &.green {
+            color: $background-green;
+        }
+        &.blue {
+            color: $background-blue;
+        }
+        &.orange {
+            color: $background-orange;
+        }
+    }
+}
+
+div.panel {
+    border: 1px solid $border-default;
+    border-bottom-width: 3px;
+    //border-top-width: 3px;
+    @include border-radius();
+    padding: $padding;
+    overflow: hidden;
+
+    header, footer {
+        padding: $padding/2 $padding;
+        background: $background-default-light;
+        margin: -$padding;
+        //font-family: $font-family-sans-serif;
+    }
+
+    header {
+        border-bottom: 1px solid $border-default;
+        margin-bottom: $padding;
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    footer {
+        border-top: 1px solid $border-default;
+        margin-top: $padding;
+    }
+
+    &.red {
+        color: $text-red;
+        border-color: rgba($border-red, 0.5);
+
+        header, footer {
+            background: $background-red-light;
+            border-color: rgba($border-red, 0.5);
+        }
+    }
+    &.green {
+        color: $text-green;
+        border-color: rgba($border-green, 0.5);
+
+        header, footer {
+            background: $background-green-light;
+            border-color: rgba($border-green, 0.5);
+        }
+    }
+    &.blue {
+        color: $text-blue;
+        border-color: rgba($border-blue, 0.5);
+
+        header, footer {
+            background: $background-blue-light;
+            border-color: rgba($border-blue, 0.5);
+        }
+    }
+    &.orange {
+        color: $text-orange;
+        border-color: rgba($border-orange, 0.5);
+
+        header, footer {
+            background: $background-orange-light;
+            border-color: rgba($border-orange, 0.5);
+        }
+    }
+
+    table {
+        margin: -$padding 0;
+        tr:last-child {
+            td {
+                border: none;
+            }
+        }
+    }
+}

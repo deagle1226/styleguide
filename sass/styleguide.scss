@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+
 * {
     //margin-bottom: $padding !important;
 }
@@ -9,11 +10,11 @@ h1, h2, h3, h4, h5, h6 {
     //margin-bottom: 0px;
 }
 
-.context {
+.context.styleguide {
     margin-top: $padding;
 }
 
-nav {
+nav.styleguide {
     position: fixed;
     z-index: 99;
     top: $padding;
@@ -23,7 +24,7 @@ nav {
 //    border-bottom-width: 3px;
     width: 175px;
     font-family: $font-family-sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
 
     ul {
@@ -36,7 +37,7 @@ nav {
             color: $border-blue;
             text-decoration: none;
             @include transition();
-            padding: 5px 10px;
+            padding: 4px 10px;
             border-left: 3px solid transparent;
 
             &:hover, &.active {
@@ -51,12 +52,33 @@ nav {
             //text-transform: none;
 
             a {
-                font-size: 11px;
-                padding: 3px 20px;
+                font-size: 10px;
+                padding: 2px 20px;
                 border-width: 2px;
                 opacity: 0.75;
             }
         }
     }
 
+}
+
+.panel {
+    margin-bottom: 5px;
+}
+
+pre {
+    overflow: visible;
+    padding-top: 30px !important;
+    &:after {
+        content: 'Example';
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        color: #000;
+        font-size: $font-size-h5;
+        font-weight: $headings-font-weight;
+        font-family: $font-family-sans-serif;
+        opacity: 0.25;
+        text-transform: uppercase;
+    }
 }

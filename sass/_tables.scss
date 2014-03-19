@@ -1,14 +1,15 @@
 table {
     width: 100%;
     border-collapse: separate;
+    color: inherit;
 
     td {
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid $border-default-light;
         padding: $padding/3 5px;
     }
 
     th {
-        border-bottom: 3px solid rgba(0,0,0,0.1);
+        border-bottom: 3px solid $border-default-light;
         text-align: left;
         padding: $padding/2 5px;
     }
@@ -24,19 +25,54 @@ table {
 
     &.hoverable {
         tr:hover {
-            background: rgba(0,0,0,0.025);
+            background: $background-default-light;
         }
     }
 
     &.bordered {
         border-collapse: collapse;
-        border-bottom: 3px solid rgba(0,0,0,0.1);
+        border-bottom: 3px solid $border-default-light;
 
         td, th {
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid $border-default-light;
         }
         th {
             border-bottom-width: 3px;
+        }
+    }
+
+    tr, td, th {
+        &.red {
+            background: $background-red-light;
+            color: $text-red;
+            border-color: rgba($border-red, 0.25);
+            td, th {
+                border-color: rgba($border-red, 0.25);
+            }
+        }
+        &.green {
+            background: $background-green-light;
+            color: $text-green;
+            border-color: rgba($border-green, 0.25);
+            td, th {
+                border-color: rgba($border-green, 0.25);
+            }
+        }
+        &.blue {
+            background: $background-blue-light;
+            color: $text-blue;
+            border-color: rgba($border-blue, 0.25);
+            td, th {
+                border-color: rgba($border-blue, 0.25);
+            }
+        }
+        &.orange {
+            background: $background-orange-light;
+            color: $text-orange;
+            border-color: rgba($border-orange, 0.25);
+            td, th {
+                border-color: rgba($border-orange, 0.25);
+            }
         }
     }
 }

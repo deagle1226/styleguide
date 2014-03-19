@@ -1,6 +1,6 @@
 /* _mixins.scss */
 
-@mixin border-radius($radius: 5px) {
+@mixin border-radius($radius: $border-radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
@@ -17,10 +17,10 @@
 
 @mixin button(
     $textColor: $darkGray,
-    $bgColor: #fff,
+    $bgColor: $background-default,
     $borderWidth: 1px,
     $borderStyle: solid,
-    $borderColor: #ccc,
+    $borderColor: $border-default-hover,
     $textColorHover: $textColor,
     $bgColorHover: darken($bgColor, 10%),
     $borderWidthHover: $borderWidth,
@@ -29,8 +29,8 @@
     $fontSize: $font-size-base,
     $paddingVert: 5px,
     $paddingHoriz: 7px,
-    $borderBottomWidthMulti: 2,
-    $borderBottomWidthMultiHover: 2,
+    $borderBottomWidthMulti: 3,
+    $borderBottomWidthMultiHover: 3,
     $textShadowColor: $bgColor,
     $textShadowColorHover: $bgColorHover
 ) {

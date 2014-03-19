@@ -53,16 +53,19 @@ $(document).on('ready', function() {
 $(window).on('scroll', function() {
     var windscroll = $(window).scrollTop();
     if (windscroll >= 123) {
-        $('.group').each(function(i) {
-            if ($(this).offset().top <= windscroll + 100) {
-                $('nav > ul > li > a.active').removeClass('active');
-                $('nav > ul > li > a').eq(i).addClass('active');
-            }
-        });
+//        $('.group').each(function(i) {
+//            if ($(this).offset().top <= windscroll + 100) {
+//                $('nav > ul > li > a.active').removeClass('active');
+//                $('nav > ul > li > a').eq(i).addClass('active');
+//            }
+//        });
         $('.wrapper').each(function(i) {
-            if ($(this).offset().top <= windscroll + 100) {
+            if ($(this).offset().top <= windscroll + 150) {
                 $('nav > ul > li > ul > li > a.active').removeClass('active');
                 $('nav > ul > li > ul > li > a').eq(i).addClass('active');
+
+                $('nav > ul > li > a.active').removeClass('active');
+                $('nav > ul > li > a').eq($(this).parent().index()).addClass('active');
             }
         });
     } else {

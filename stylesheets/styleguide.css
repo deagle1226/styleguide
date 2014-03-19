@@ -1,0 +1,74 @@
+/* _variables.scss */
+/* _mixins.scss */
+/* line 13, ../sass/styleguide.scss */
+.context.styleguide {
+  margin-top: 20px;
+}
+
+/* line 17, ../sass/styleguide.scss */
+nav.styleguide {
+  position: fixed;
+  z-index: 99;
+  top: 20px;
+  right: 0;
+  width: 175px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 30, ../sass/styleguide.scss */
+nav.styleguide ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 35, ../sass/styleguide.scss */
+nav.styleguide ul a {
+  display: block;
+  color: #2f71a9;
+  text-decoration: none;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding: 4px 10px;
+  border-left: 3px solid transparent;
+}
+/* line 43, ../sass/styleguide.scss */
+nav.styleguide ul a:hover, nav.styleguide ul a.active {
+  background: #d9edf7;
+  color: #285e8e;
+  border-color: #2f71a9;
+}
+/* line 54, ../sass/styleguide.scss */
+nav.styleguide ul ul a {
+  font-size: 10px;
+  padding: 2px 20px;
+  border-width: 2px;
+  opacity: 0.75;
+}
+
+/* line 65, ../sass/styleguide.scss */
+.panel {
+  margin-bottom: 5px;
+}
+
+/* line 69, ../sass/styleguide.scss */
+pre {
+  overflow: visible;
+  padding-top: 30px !important;
+}
+/* line 72, ../sass/styleguide.scss */
+pre:after {
+  content: 'Example';
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  opacity: 0.25;
+  text-transform: uppercase;
+}

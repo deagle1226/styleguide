@@ -2,6 +2,7 @@
 $width: 900px;
 $padding: 20px;
 $widthPadding: $width - (2 * $padding);
+$border-radius: 3px;
 
 // -- TYPOGRAPHY -- //
 //$font: 'Roboto', sans-serif;
@@ -36,19 +37,29 @@ $headings-line-height:    2;
 $text-shadow: rgba(0,0,0,0.25);
 $darkGray: #555555;
 
+$text-default: #555;
+$background-default: #fff;
+$background-default-hover: #e6e6e6;
+$background-default-light: rgba(0,0,0,0.05);
+$border-default: #ddd;
+$border-default-hover: #ccc;
+$border-default-light: #dfdfdf;
+
 // RED
 $background-red:            #d9534f;
 $background-red-hover:      #d2322d;
 $background-red-light:      #f2dede;
-$border-red:                #d43f3a;
-$border-red-hover:          #ac2925;
+$border-red:                darken(#d43f3a, 5%);
+$border-red-light:          lighten($border-red, 20%);
+$border-red-hover:          darken(#ac2925, 3%);
 $text-red:                  #a94442;
 
 // GREEN
 $background-green:          #5cb85c;
 $background-green-hover:    #47a447;
 $background-green-light:    #dff0d8;
-$border-green:              #4cae4c;
+$border-green:              darken(#4cae4c, 5%);
+$border-green-light:        lighten($border-green, 20%);
 $border-green-hover:        #398439;
 $text-green:                #3c763d;
 
@@ -56,7 +67,8 @@ $text-green:                #3c763d;
 $background-blue:           #428bca;
 $background-blue-hover:     #3276b1;
 $background-blue-light:     #d9edf7;
-$border-blue:               #357ebd;
+$border-blue:               darken(#357ebd, 5%);
+$border-blue-light:         lighten($border-blue, 20%);
 $border-blue-hover:         #285e8e;
 $text-blue:                 #31708f;
 
@@ -64,6 +76,7 @@ $text-blue:                 #31708f;
 $background-orange:         #f0ad4e;
 $background-orange-hover:   #ed9c28;
 $background-orange-light:   #fcf8e3;
-$border-orange:             #eea236;
+$border-orange:             darken(#eea236, 5%);
+$border-orange-light:       lighten($border-orange, 20%);
 $border-orange-hover:       #d58512;
 $text-orange:               #8a6d3b;
